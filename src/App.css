@@ -1,0 +1,118 @@
+body {
+  margin: 0px;
+  font-family : Verdana, Geneva, Tahoma, sans-serif;
+  /* display: flex; */
+}
+
+h2 {
+  text-align: center;
+  border-style: dashed;
+  color: #0E46A3;
+  background-color: #E1F7F5;
+  margin-bottom: 20px;
+}
+
+table {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 23px;
+  background-color: #EADBC8;
+  padding: 12px;
+  width : 100%;
+}
+
+th {
+  color: #1E0342;
+  font-size: 17px;
+}
+
+#rank {
+  color: red;
+}
+
+.button_date{  
+  border-bottom: 5px;
+  display: grid;
+  grid-template-columns: auto 1fr auto; 
+}
+
+button:hover {
+  border-color: #0E46A3;
+}
+
+button {
+  color: #1E0342;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+#prev, #next{
+  padding: 20px;
+  font-size: 25px;
+  background-color: #9AC8CD;
+}
+
+.date_view{
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bold;
+  color: #948979;
+}
+
+@media screen and (max-width: 640px) {
+  table {
+  margin-top: 20px;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+  }
+  
+  th {
+  font-size: 9px;
+  }
+  
+  #prev, #next {
+  padding: 5px;
+  font-size: 17px;
+  }
+
+  .date_view{
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .button_date{  
+    display: flex;
+    flex-direction : column;
+  }
+
+}
+
+  @media screen and (min-width: 1000px) {
+
+    h2 {
+      font-size: 40px;
+    }
+    
+    table {
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 20px;
+    width: 100%;
+    }
+    
+    th {
+    font-size: 25px;
+    }
+    
+    #prev, #next {
+    padding: 30px;
+    font-size: 30px;
+    }
+  
+    .date_view{
+      font-size: 40px;
+      padding: 20px;
+    }
+  }
